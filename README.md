@@ -7,10 +7,33 @@ Patched Sur is a UI patcher for macOS Big Sur, designed to make it easy to run m
 ## Compatibility
 To see if your Mac is supported [click here](https://bensova.gitbook.io/big-sur/supported-macs).
 
+(Basically it says if you have a 2012/2013 Mac it'll be terrible but anything else is better).
+
+## Credits
+
+Patched Sur isn't just by me (Ben), **I mostly put it all together and made it easier for people to use it**, several other people have contributed to the patcher and the patches making this what it is today!
+
+- [barrykn](https://github.com/barrykn/): Made the micropatcher that introduced me to the patching process and restored my faith in my really old computer. He also helped pull together a lot of the patches used in this patcher.
+- [ASentientBot](https://asentientbot.github.io/): Made the Hax patches for the installer and brought GeForce Tesla (9400M/320M) framebuffer to Big Sur.
+- [jackluke](https://forums.macrumors.com/members/jackluke.1133911/): Figured out how to bypass compatibility checks on the installer USB.
+- [highvoltage12v](https://forums.macrumors.com/members/highvoltage12v.883629/): Made the first WiFi kexts used with Big Sur
+- [ParrotGeek](https://parrotgeek.com/): developed the LegacyUSBInjector kext to get USB ports working on some older Macs and figuring out a way to skip the terminal commands when opening the installer app on the USB.
+- [testheit](https://forums.macrumors.com/members/testheit.1133139/): Helped with the kmutil command in the micropatcher (that is used in Patched Sur too)
+- [Ausdauersportler](https://github.com/Ausdauersportler): Integrated patches for iMac Metal GPU support.
+- [StarPlayrX](https://github.com/starplayrx/): Pointed out startosinstall which was later used in the patcher to allow macOS updating support without a USB.
+- [ASentientHedgehog](https://github.com/moosethegoose2213/): Helped randomly along the way
+- [dosdude1](http://dosdude1.com/): OpenGL/GPUSupport swap and of course his patchers which have helped with unsupported Macs patching even in Big Sur.
+- [John_val](https://www.reddit.com/user/John_val), [fromeister2009](https://www.reddit.com/user/fromeister2009), [Mr. Macintosh](https://mrmacintosh.com/), [Emperor Epitaph](https://www.youtube.com/channel/UCxGV-Up88t5D4CpcvLS43lw), [Finder352](https://www.youtube.com/channel/UC1ANuAzvOToCVizzck3JjPg), [Monkiey](https://twitter.com/Monkiey2) and [AvaQueen](https://github.com/AvaQueen-Official/) for testing some of the new features before release, and pointing out the bugs with them.
+- and several others who helped with making Big Sur run as great as it does on unsupported Macs.
+
+Patched Sur also uses two Open Source frameworks, Files and ShellOut by JohnSundell (MIT License), to help handle certain tasks.
+
 ## FileVault Warning 
 **You must Turn FileVault Off before using Patched Sur**
 
 The patcher shouldn't let you upgrade anyway, but it's good to make sure it's off.
+
+Also, know that turning it on after the upgrade isn't a smart idea. By doing that, you're preventing yourself from recovering your patched Mac in a lot of cases. 
 
 ## How do I use Patched Sur?
 

@@ -13,6 +13,8 @@ import Foundation
 //    print(string, to: &mainLogger)
 //}
 
+//fatalError()
+
 print("Hello! If you're seeing this, you are seeing the logs of Patched Sur!")
 print("Or maybe running this from the command line...")
 print("")
@@ -36,6 +38,13 @@ if UserDefaults.standard.string(forKey: "UpdateTrack") == "Public Beta" {
     print("We're switching to the new stuff!")
     UserDefaults.standard.setValue("Developer", forKey: "UpdateTrack")
 }
+
+print("Checking for Metal")
+if let metalStatus = try? call("system_profiler SPDisplaysDataType | grep Metal"), !metalStatus.contains(": Supported") {
+    AppInfo.openGL = true
+}
+
+//print(UserDefaults.standard.)
 
 CommandLine.arguments.forEach { arg in
     switch arg {
@@ -79,6 +88,11 @@ CommandLine.arguments.forEach { arg in
     case "--force-skip-download", "-pre", "-p":
         print("Detected --force-skip-download, skipping the download files step in the updater.")
         AppInfo.usePredownloaded = true
+    case "--nothing", "-n":
+        print("Detected --nothing, we're not actually going to do anything today.")
+        AppInfo.nothing = true
+    case "-AppleLanguages":
+        print("Running with a custom language.")
     default:
         print("Unknown option (\(arg)) detected. Ignoring option. (Use --help to see available options)")
     }

@@ -26,19 +26,19 @@ struct AboutMyMac: View {
                 SideImageView(releaseTrack: releaseTrack)
                 VStack(alignment: .leading, spacing: 2) {
                     Text("macOS ").font(.largeTitle).bold() + Text("Big Sur").font(.largeTitle)
-                    Text("Version \(systemVersion)\(buildNumber.count < 8 ? "" : " Beta") (\(buildNumber))").font(.subheadline)
+                    Text("\(NSLocalizedString("PO-AMM-VERSION", comment: "PO-AMM-VERSION")) \(systemVersion)\(buildNumber.count < 8 ? "" : " Beta") (\(buildNumber))").font(.subheadline)
                         .redacted(reason: systemVersion.contains("%") ? .placeholder : .init())
                     Rectangle().frame(height: 15).opacity(0).fixedSize()
                     if let coolModel = coolModel {
                         Text(coolModel).font(.subheadline).bold()
                             .redacted(reason: coolModel.contains("%") ? .placeholder : .init())
                     }
-                    HStack {
+                    HStack(spacing: 10) {
                         VStack(alignment: .leading) {
-                            Text("Model       ").font(.subheadline).bold()
-                            Text("Processor    ").font(.subheadline).bold()
-                            Text("Graphics     ").font(.subheadline).bold()
-                            Text("Memory   ").bold()
+                            Text(.init("PO-AMM-MODEL")).font(.subheadline).bold()
+                            Text(.init("PO-AMM-PROCESSOR")).font(.subheadline).bold()
+                            Text(.init("PO-AMM-GRAPHICS")).font(.subheadline).bold()
+                            Text(.init("PO-AMM-MEMORY")).bold()
                         }
                         VStack(alignment: .leading) {
                             Text(model)
@@ -53,7 +53,7 @@ struct AboutMyMac: View {
                     }
                     HStack {
                         VIButton(id: "HOME", h: $hovered) {
-                            Text("Back to Home")
+                            Text(.init("PO-AMM-BACK"))
                                 .foregroundColor(.white)
                         } onClick: {
                             withAnimation {
@@ -62,7 +62,7 @@ struct AboutMyMac: View {
                         }.inPad()
                         .btColor(releaseTrack == "Developer" ? .init(r: 196, g: 0, b: 255) : .init(r: 0, g: 220, b: 239))
                         VIButton(id: "SOFTWARE", h: $hovered) {
-                            Text("Software Update")
+                            Text(.init("PO-AMM-UPDATE"))
                                 .foregroundColor(.white)
                         } onClick: {
                             withAnimation {
