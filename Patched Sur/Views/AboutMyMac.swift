@@ -25,7 +25,11 @@ struct AboutMyMac: View {
             HStack {
                 SideImageView(releaseTrack: releaseTrack)
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("macOS ").font(.largeTitle).bold() + Text("Big Sur").font(.largeTitle)
+                    if AppInfo.lol {
+                        Text("macOS ").font(.largeTitle).bold() + Text("Monterey").font(.largeTitle)
+                    } else {
+                        Text("macOS ").font(.largeTitle).bold() + Text("Big Sur").font(.largeTitle)
+                    }
                     Text("\(NSLocalizedString("PO-AMM-VERSION", comment: "PO-AMM-VERSION")) \(systemVersion)\(buildNumber.count < 8 ? "" : " Beta") (\(buildNumber))").font(.subheadline)
                         .redacted(reason: systemVersion.contains("%") ? .placeholder : .init())
                     Rectangle().frame(height: 15).opacity(0).fixedSize()
@@ -61,6 +65,7 @@ struct AboutMyMac: View {
                             }
                         }.inPad()
                         .btColor(releaseTrack == "Developer" ? .init(r: 196, g: 0, b: 255) : .init(r: 0, g: 220, b: 239))
+                        .frame(maxWidth: 150)
                         VIButton(id: "SOFTWARE", h: $hovered) {
                             Text(.init("PO-AMM-UPDATE"))
                                 .foregroundColor(.white)
@@ -70,6 +75,7 @@ struct AboutMyMac: View {
                             }
                         }.inPad()
                         .btColor(releaseTrack == "Developer" ? .init(r: 196, g: 0, b: 255) : .init(r: 0, g: 220, b: 239))
+                        .frame(maxWidth: 150)
                     }.padding(.top, 10)
                 }.font(.subheadline)
                 .foregroundColor(.white)
@@ -126,14 +132,23 @@ struct SideImageView: View {
     let releaseTrack: String
     let scale: CGFloat
     var body: some View {
-        if releaseTrack == "Beta" || releaseTrack == "Developer" {
+        if AppInfo.lol {
+            Image("PMBasic")
+                .interpolation(.high)
+                .resizable()
+                .scaledToFit()
+                .frame(width: scale, height: scale)
+                .padding()
+        } else if releaseTrack == "Beta" || releaseTrack == "Developer" {
             Image("BigSurLake")
+                .interpolation(.high)
                 .resizable()
                 .scaledToFit()
                 .frame(width: scale, height: scale)
                 .padding()
         } else {
             Image("BigSurSafari")
+                .interpolation(.high)
                 .resizable()
                 .scaledToFit()
                 .frame(width: scale, height: scale)
@@ -150,17 +165,41 @@ struct SideImageView: View {
 struct BackGradientView: View {
     @Environment(\.colorScheme) var colorScheme
     let releaseTrack: String
+    @State var startPoint = UnitPoint(x: 0, y: 0)
+    @State var endPoint = UnitPoint(x: 0, y: 2)
     var body: some View {
-        if releaseTrack == "Developer" {
-            LinearGradient(gradient: .init(colors: [.init(r: 196, g: 0, b: 255), .init(r: 117, g: 0, b: 255)]), startPoint: .topLeading, endPoint: .bottomTrailing)
-                .opacity(colorScheme == .dark ? 0.7 : 0.96)
-//        } else if releaseTrack == "Developer" {
-//            LinearGradient(gradient: .init(colors: [.init(r: 237, g: 36, b: 5), .init(r: 254, g: 110, b: 16)]), startPoint: .bottomLeading, endPoint: .topTrailing)
-//                .opacity(colorScheme == .dark ? 0.5 : 0.96)
-        } else {
-            LinearGradient(gradient: .init(colors: [.init(r: 0, g: 220, b: 239), .init(r: 5, g: 229, b: 136)]), startPoint: .leading, endPoint: .trailing)
-                .opacity(colorScheme == .dark ? 0.7 : 0.96)
-                .background(Color.black)
+        Group {
+            if AppInfo.lol {
+                LinearGradient(gradient: .init(colors: [.init(r: 16, g: 228, b: 171), .init(r: 41, g: 130, b: 202)]), startPoint: startPoint, endPoint: endPoint)
+                    .opacity(colorScheme == .dark ? 0.7 : 0.96)
+                    .onAppear {
+                        withAnimation (.easeInOut(duration: 6).repeatForever()) {
+                            self.startPoint = UnitPoint(x: 1, y: -1)
+                            self.endPoint = UnitPoint(x: 0, y: 1)
+                        }
+                    }
+            } else if releaseTrack == "Developer" {
+                LinearGradient(gradient: .init(colors: [.init(r: 196, g: 0, b: 255), .init(r: 117, g: 0, b: 255)]), startPoint: startPoint, endPoint: endPoint)
+                    .opacity(colorScheme == .dark ? 0.7 : 0.96)
+                    .onAppear {
+                        withAnimation (.easeInOut(duration: 6).repeatForever()) {
+                            self.startPoint = UnitPoint(x: -1, y: 1)
+                            self.endPoint = UnitPoint(x: 0, y: -1)
+                        }
+                    }
+            } else {
+                LinearGradient(gradient: .init(colors: [.init(r: 0, g: 220, b: 239), .init(r: 5, g: 229, b: 136)]), startPoint: startPoint, endPoint: endPoint)
+                    .opacity(colorScheme == .dark ? 0.7 : 0.96)
+                    .background(Color.black)
+                    .onAppear {
+                        withAnimation (.easeInOut(duration: 6).repeatForever()) {
+                            self.startPoint = UnitPoint(x: 1, y: -1)
+                            self.endPoint = UnitPoint(x: 0, y: 1)
+                        }
+                    }
+            }
+        }.onAppear {
+            if releaseTrack == "Developer" { endPoint = UnitPoint(x: 0, y: 2) }
         }
     }
 }

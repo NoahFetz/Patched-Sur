@@ -1,0 +1,431 @@
+/*
+  Localizable.strings
+  Patched Sur
+
+  English (en)
+  Created by Ben Sova on 4/25/21.
+*/
+
+// MARK: Pre-Install App (96)
+// Generic
+
+"GET-STARTED" = "Započni";
+"CONTINUE" = "Nastavi";
+"GO-BACK" = "Vrati se";
+"CANCEL" = "Otkaži";
+"BROWSE" = "Listaj";
+"REFRESH" = "Osvježi";
+"CONTINUE-ERASE" = "Nastavi i izbriši";
+"REQUEST-ROOT" = "Traži root permisije";
+"EXTRACT-PACKAGE" = "Otpakovanje paketa";
+"FINISHED" = "Završeno";
+
+// MARK: Enter Password Prompt
+"B-ENTER-PASS-CHANGES" = "Patched Sur bi želio praviti promjene.";
+"B-ENTER-PASS-ALLOW" = "Unesite Vašu šifru da dozvolite ovo.";
+// The main difference here is
+"B-EP-USERNAME" = "Korisničko ime:";
+// The only difference here is the colon, which sounds dumb, but it's needed.
+"B-EP-PASSWORD" = "Šifra:";
+"B-EP-PASSWORD-PH" = "Šifra";
+
+// MARK: Welcome Page
+
+// Reminder! "Patched Sur" is a formal name, so don't localize that. (Patches/Patcher can be localized, just not Patched Sur)
+"PRE-WELCOME-TITLE" = "Dobrodošli u Patched Sur!";
+"PRE-WELCOME-DESCRIPTION" = "Ova zakrpa je napravljena da Vam pruži najlakši način da se prebacite na MacOS Big Sur na Vašem nepodržanom Mac uređaju. Pripremi sve da bi bilo savršeno do kraja instalacije, i brine se da nešto ne pođe po krivu tijekom instalacije. Do kraja instalacije, Patched Sur će pokušati napraviti da Vaš Mac pokreće Big Sur baš kao i podržani uređaji.";
+
+// MARK: Thanks To Page
+
+"THANKS-TITLE" = "Zahvalnica";
+"THANKS-CONTENT" = "Patched Sur nisam napravio samo ja (Ben), nekoliko drugih ljudi su doprinijeli patcher-u i učinili ga ovime što je danas.
+
+- barrykn: Napravio je micropatcher koji me je uveo u proces patchinga i oživio mi nadu u moj stari kompjuter. Skidam kapu barrykn-u, a to bi ste trebali i Vi.
+- ASentientBot: Napravio je Hax patcheve za instaler i donio je GeForce Tesla (9400M/320M) framebuffer u Big Sur zajedno sa Ne-metal Grafičkim Aceleracijskim patchevima.
+- jackluke: Otkrio je kako izbjeći provjere kompatibilnosti na instalacijskom USB-u.
+- highvoltage12v: Napravio je prvi Wi-Fi kext koji koristi Big Sur.
+- ParrotGeek: Razvio je LegacyUSBInjector kext da bi učinio da USB portovi rade na starijim Mac uređajima i otkrio je način za izbjegavanje komandi u terminalu tijekom otvaranja instalacije na USB-u.
+- testheit: Pomogao sa kmutil komandom u micropatcher-u (Koja se koristi i u Big Sur-u).
+- Ausdauersportler: Napravio patcheve za iMac Metal GPU podržavanje.
+- StarPlayrX: Otkrio startosinstall koji je korišten u patcheru da dozvoli MacOS ažuriranja bez USB uređaja.
+- ASentientHedgehog: Nasumično je pomagao tijekom rada.
+- OCLP Team: Pomogao sa stvarima na kernel razini za ne-Tesla kartice i ne-metal grafičku akceleraciju.
+- dosdude1: OpenGL/GPUSupport swap i naravno još puno toga korištenog u njegovom patcher-u.
+- Bweesh, Bruno Rocha, DutchDK, NickP0is0n, AvaQueen, Finder352, DJT_233, Noah Fetz, duke4e, riiveraluis i Dead_K1ller za prevođenje aplikacije.
+- John_val, fromeister2009, Mr. Macintosh, Emperor Epitaph, Finder352, Monkiey i AvaQueen za testiranje novih mogućnosti prije puštanja aplikacije u rad, i otkrivanje bugova.
+- i još nekoliko ljudi koji su pomogli u tome da Big Sur radi na Vašem računaru kao što bi radio na podržanom uređaju.
+
+Patched sur također koristi dva Open Source frameworka, fajlove i ShellOut od JohnSundell-a (MIT Licenca), da bi mogao izvršavati određene zadatke.";
+
+// MARK: Please Remember Page
+
+"PLEASE-REMEMBER" = "Molim Vas zapamtite";
+"PRE-PR-1" = "Patched Sur je trenutno u BETA fazi i nikad neće biti savršen. On neće brikovati Vaš Mac, ali može se desiti da izgubite podatke ako nemate backup.";
+"PRE-PR-2" = " Obavezno napravite Time Machine backup prije korištenja. ";
+"PRE-PR-3" = "Ja (i ostali) ne možemo biti okrivljeni ako nešto pođe po zlu. Ja ću učiniti sve što mogu da Vam pomognem ako ima problem, ali ja ne znam sve i ima nekih slučajeva kada Vam ne mogu pomoći. U najviše slučajeva greška nije u Patched Sur alatu, tako da ništa ne mogu učiniti.";
+
+// MARK: Mac Compatibility Page
+
+"PRE-VERIFY-MAC" = "Provjera Mac-a";
+"PRE-VERIFY-QUICK" = "Ovaj prvi korak je ključan da bi otkrili koliko je Patched Sur pouzdan. Ovaj korak pokušava da detektuje koliko god problema je moguće, prije nego što naletite na njih. Ovo uključuje FileVault, nedostatak grafičke akceleracije i druge probleme. Ne brinite, ovo će biti brzo.";
+"PRE-VERIFY-FETCH" = "Uzimanje Informacija";
+"PRE-VERIFY-2" = "Provjera Mac-a";
+
+"PRE-REPORT-BY" = "Prijavljeno od: ";
+"PERSON" = "osoba";
+"OTHERS" = "drugi";
+"APPROVES" = "odobrava";
+"APPROVE" = "odobriti";
+
+"WiFi, Ethernet and Bluetooth" = "WiFi, Ethernet i Bluetooth";
+"I/O Ports" = "I/O Portovi";
+"Graphics Acceleration" = "Grafička akceleracija";
+"Sleep and Brightness" = "Spavanje i Svjetlina ekrana";
+"FileVault" = "FileVault";
+"Personal Hotspots" = "Privatni Hotspotovi";
+"Personal Hotspot" = "Privatni Hotspot";
+"WPA2 Enterprise" = "WPA2 Enterprise";
+
+"PROB-FATAL" = "Fatalni Problem Detektovan";
+"PROB-WARN" = "Mogući Problem Detektovan";
+"PROB-NO-UPGRADE" = "Ne možete instalirati Big Sur zbog ovog ili drugih problema.";
+"PROB-CONTINUE-ANYWAY" = "Svejedno Nastavi";
+"PROB-OTHERS" = "Drugi problemi";
+
+"PROB-FILE-TITLE" = "FileVault je Uključen.";
+"PROB-FILE-DESCRIPTION" = "Vaš Mac ima FileVault uključen. Dok je ovo dobar alat za enkripciju podataka, on se pokvari na Big Sur sistemu na nepodržanim Mac uređajima. Nećete moći ući u Recovery Mode i sa vremena na vrijeme nećete moći otključati Vaš disk. Morate isključiti FileVault prije korištenja ovog programa. To možete učiniti tako što odete u Sistemska Podešavanja, kliknete Sigurnost i Privatnost (Security and Privacy), odete na FileVault i kliknete da ga isključite.";
+
+// Reminder! "BigMac" and "StarPlayrX" are a formal names, so don't localize that.
+"PROB-PRO-TITLE" = "Postoji bolji patcher za Mac Pro uređaje";
+"PROB-PRO-DESCRIPTION" = "Dok je Patched Sur odličan za većinu Mac uređaja, Mac Pro-ovi se ne bi trebali koristiti sa ovim patcherom. Ovaj patcher nema tačne patchove, a ima još jedan patcher lak za korištenje koji je dizajniran posebno za Mac Pro uređaje. To je StarPlayrX-ov BigMac patcher, i on će Vam pružiti odličnu uslugu na Vašem Mac uređaju.";
+"PROB-GX-TITLE" = "Nema Grafičke akceleracije";
+"PROB-GX-DESCRIPTION" = "Vaš Mac ne podržava Metal grafičku akceleraciju, pa će Big Sur biti EKSTREMNO SPOR. Ne očekujte da bude brz i ne očekujte da radi dobro. Vi ovo ne možete promijeniti i patch pokušava to da popravi, ali je taj patch trenutno ekstremno nestabilan. Ako želite nastaviti, možete, ali ne očekujte magično Big Sur iskustvo.";
+
+"PROB-SURE" = "Da li ste sigurni da želite nastaviti?";
+"PROB-SURE-SURE" = "Patched Sur je detektovao probleme koji bi mogli (i hoće) izazvati probleme sa Big Sur sistemom. Vaš Mac možda neće pokazivati puni potencijal, i u nekim slučajevima bi bilo dobro da ostanete na Catalina sistemu.";
+
+"REPORT-UNKNOWN" = "Nepoznata Kompatibilnost";
+"REPORT-UNKNOWN-2" = "Zavisno od Vašeg Mac uređaja, Patched Sur bi mogao, ili ne bi mogao, raditi dobro. Patched Sur nije pronašao nikakve izvještaje o kompatibilnosti za Vaš Mac, tako da Vam to ne može reći. Ne brinite, nije puno ljudi dalo izvještaj o tome kako Big Sur radi na različitim Mac uređajima, tako da bi Vaš Mac trebao raditi dobro. Kada pređete na Big Sur, možete nam pomoći izvještajem o Vašim utiscima (otiđite u postavke na aplikaciji nakon instalacije), i pomognite drugim ljudima!";
+
+// MARK: Update Track Page
+
+"PRE-TRACK-TITLE" = "Postavite vrstu ažuriranja";
+"PRE-TRACK-DESCRIPTION" = "Vrsta ažuriranja govori koju verziju MacOs-a želite. Verzija Release je najstabilnija, i to već vjerovatno koristite. Beta verzija vam daje pristup novim mogućnostima MacOS-a ranije, ali može biti nestabilna.";
+
+"TRACK-RELEASE" = "Release";
+"TRACK-BETA" = "Beta";
+
+// MARK: macOS Select Page
+
+"PRE-VERS-TITLE" = "Verzija MacOS Big Sur sistema";
+"PRE-VERS-DESCRIPTION" = "Dok ćete u većini slučajeva želiti najnoviju verziju, iz bilo kojeg razloga biste možda željeli stariju verziju, i to možete postaviti ovdje. Ako želite koristiti prije instaliran Install Assistant.pkg ili aplikaciju instalera, možete to odabrati klikom na browse. Ako želite skinuti i koristiti najnoviju verziju MacOS-a, samo kliknite dugme za skidanje MacOS-a.";
+"PRE-VERS-NOFI" = "Nismo mogli pristupiti listi MacOS instalera. Ovo je vjerovatno zato što je WiFi nedostupan. Morati ćete koristiti prije downloadan MacOS instaler.";
+// NOTE: In these two, XX.YY.ZZ is the macOS version. So in English, the first would show Download macOS 11.3. \(installers[0].version)
+"PRE-VERS-DOWNLOAD" = "Skini macOS XX.YY.ZZ";
+"PRE-VERS-USE" = "Koristi macOS XX.YY.ZZ";
+"PRE-VERS-PRE" = "Koristi prije downloadan MacOS";
+"PRE-VERS-REDOWNLOAD" = "Opet skini macOS";
+"PRE-VERS-FETCH" = "Dohvaćanje instalera";
+
+// MARK: Downloading Kexts Page
+
+"DOWNLOAD-PATCHES" = "Skidanje patchova";
+"DOWNLOAD-FILES" = "Skidanje fajlova";
+"PRE-DP-1" = "Set vars alat vam dozvoljava da namjestite NVRAM i SIP status, da bi Big Sur dozvolio da se Mac pokrene kako treba.";
+"PRE-DP-2" = "Ovo je zadnji alat koji ćete koristiti prije instaliranja Big Sur sistema.";
+"PRE-DP-3" = "Ovo će vam trebati samo ako ga niste pokretali prije na Mac uređaju, ili ako ste uradili PRAM reset.";
+"PRE-DP-4" = "Kext patchovi vam dozvoljavaju da koristite stvari kao WiFi ili USB portove, tako da vam Mac ostane na punoj funkcionalnosti.";
+"PRE-DP-CANCEL-1" = "Patchovi koji će kasnije biti korišteni trenutno se skidaju. Da li ste sigurni da se želite vratiti nazad?";
+"PRE-DP-CANCEL-2" = "Skidanje patcheva";
+"CANCEL-DOWNLOAD" = "Otkaži skidanje";
+"RESTART-DOWNLOAD" = "Ponovo pokreni skidanje";
+"CONTINUE-DOWNLOAD" = "Nastavi skidanje";
+"PRE-DP-CANCEL-3" = "Patchevi se nisu uspjeli skinuti sa interneta. Ipak, ovo bi moglo biti popravljeno ponovnim pokušajem. Da li želite pokušati opet skinuti patcheve ili se želite vratiti na prethodni korak?";
+"PRE-DP-CANCEL-4" = "Da li želite ponovo pokrenuti skidanje?";
+
+// MARK: Downloading macOS Page
+
+"PRE-DM-TITLE" = "Skidanje MacOS sistema";
+"PRE-DM-DESCRIPTION" = "Trenutno, MacOS se skida direktno sa Apple-a tako da bi mogao biti stavljen na USB. Ovo je puni instaler, tako da je to download od 12 GB. Trebat će dugo vremena, tako da ga pustite da radi i pobrinite se da je internet konekcija dobra. Nakon što ovo završi, morat ćete odabrati USB za instalaciju i onda će Patched Sur koristiti taj USB na napravi instalacijski USB.";
+"PRE-DM-BAR" = "Skidanje macOS-a XX.YY.ZZ";
+"PRE-DM-CANCEL-1" = "MacOS Big Sur se trenutno skida sa interneta da bi mogao biti korišten kasnije. Ovo je veliki fajl. Da li ste sigurni da se želite vratiti nazad?";
+"PRE-DM-CANCEL-2" = "macOS se skida sa interneta";
+"PRE-DM-CANCEL-3" = "Skidanje MacOS sistema je neuspješno. Ipak, ovo bi moglo biti riješeno ponovnim pokušajem. Da li želite ponovo pokušati skinuti MacOS ili se želite vratiti na prethodni korak?";
+
+// MARK: Select Volume Page
+
+"PRE-VOL-TITLE" = "Odaberite USB";
+"PRE-VOL-1" = "Da bi ste instalirali Big Sur, treba vam USB instalacija koja će asistirati sa upgradeom. Ovo stvara okruženje gdje će se patcher pobrinuti da sve ide kako treba.";
+"PRE-VOL-2" = "Da bi ste napravili instaler, treba vam prostor na koji ćete ga staviti.";
+"PRE-VOL-3" = "Ovaj USB mora biti 16GB ili više. Interne particije neće raditi, ali eksterne particije hoće u zavisnosti od mape particija (najvjerovatnije GUID mapa). Ako se vaš uređaj ne pokazuje, pobrinite se da je formatiran kao MacOS Extended (Journaled).";
+"PRE-VOL-NO" = "Nisu otkriveni kompatibilni uređaji.";
+// Note: VOLUME is the volume name, do not localize it, just pretend it's a volume name and just place it into your sentence
+// Ex. If the volume was "SuperDrive", then "VOLUME will be erased." would show up as "SuperDrive will be erased."
+"PRE-VOL-ERASED" = "VOLUME će biti obrisan.";
+"PRE-VOL-ERASED-2" = "Svi fajlovi na ovom uređaju će biti potpuno obrisani. Ovo se ne može vratiti. Da li ste sigurni da želite nastaviti?";
+"PRE-VOL-DETECTING" = "Detektovanje uređaja";
+"PRE-VOL-CHECKING" = "Provjera VOLUME";
+
+// MARK: Create Installer Page
+
+"PRE-CTI-TITLE" = "Kreiranje USB instalera";
+"PRE-CTI-DESCRIPTION" = "Sada se USB koji ste izabrali koristi da se napravi MacOS instalacijski USB. Fajlovi koji se kopiraju na disk stvaraju okruženje slično MacOS Big Sur recovery modu. Kada se fajlovi stave na USB, Patched Sur će ih izmijeniti tako da dozvoli vašem Mac uređaju da ih pokrene, i dodati će neke korisne alate za patchovani Mac.";
+"PRE-CTI-CANCEL-1" = "Da li ste sigurni da želite otkazati namještanje patchovanog MacOS instalera? Ovo će vam trebati da se prebacite na Big Sur, i najčešće treba dugo vremena da se napravi.";
+"PRE-CTI-CANCEL-2" = "Pravi se MacOS instaler";
+"CANCEL-PROCESS" = "Otkaži proces";
+"RESTART-PROCESS" = "Ponovo pokreni proces";
+"CONTINUE-PROCESS" = "Nastavi proces";
+"PRE-CTI-CANCEL-3" = "Dogodila se greška prilikom pravljenja MacOS instalacijskog USB-a, možete pokušati ponovo da vidite da li će se greška popraviti.";
+"PRE-CTI-CANCEL-4" = "Da li želite pokušati ponovo?";
+"PRE-CTI-CREATING" = "Kreiranje instalacije";
+
+// MARK: Done Page
+"PRE-DONE-INFO" = "Skoro ste gotovi na putu ka Big Sur sistemu. Instalacijski USB je uspješno kreiran i sada je vrijeme za malo vašeg ručnog rada. Ako ne pratite neki tutorijal, zapišite ove korake tako da znate šta trebate raditi (koraci su lagani, iako izgleda da ih ima puno):
+
+1. Restartujte Mac uređaj i držite 'option' dugme dok ne vidite neke diskove na ekranu.
+2. Kliknite na žuti ili ljubičasti EFI Boot. Ovo će odmah ugasiti vaš uređaj.
+3. Opet upalite Mac držeći 'option' dugme.
+4. Kliknite na 'Instaliraj MacOS Big Sur' (Install MacOS Big Sur).
+5. Kada se vaš Mac pokrene, kliknite na (re)instaliraj macOS Big Sur (možda tako zvuči, ali ovo neće obrisati korisničke podatke, samo će promijeniti sistemske fajlove kao standardno ažuriranje).
+6. Kada se ta aplikacija pokrene, pratite korake i odaberite vaš disk (vjerovatno Macintosh HD), a NE 'Install MacOS Big Sur' disk.
+7. Nakon što se ažuriranje završi i vidite ekran za logiranje, otvorite folder sa aplikacijama i pokrenite Patched Sur.
+8. Kliknite Patch Kexts, onda kliknite Nastavi 'Continue' i upišite vašu šifru.
+9. Nakon što se to završi, restartujte Mac i uživajte u Big Sur sistemu!";
+// I suggest adding "However, these are only in English." to the end of this, since the linked page is only in English.
+"PRE-DONE-LINK" = "Također možete naći ove korake na GitHub-u, ali oni su samo na engleskom jeziku.";
+"PRE-DONE-STEPS" = "(Koraci 10-14)";
+
+// MARK: Post-Install App (96)
+
+// General
+
+"BACK" = "Nazad";
+"RESTART-TO-FINISH" = "Restartujte da završite";
+
+// MARK: Menu Bar
+
+"PO-MN-ABOUT-PATCHER" = "O Patched Sur";
+"PREFERENCES" = "Postavke";
+"PO-AMM-TITLE" = "O mom Mac uređaju";
+"PO-MN-HELP" = "Patched Sur pomoć";
+"PO-MN-HELP-OS" = "Ažuriranje macOS";
+"PO-MN-HELP-PATCHER" = "Ažuriranje patchera";
+
+// MARK: Update Notifications
+
+// VERSIONTAG is the version number of the new patcher/macOS version (like 0.3.1 or 11.3.1).
+"PO-NOFI-SELF" = "Patched Sur sada može biti ažuriran na Verziju VERSIONTAG. Otvorite Patched Sur i kliknite Run Updates ('pokreni ažuriranja') za više informacija.";
+"PO-NOFI-OS-TITLE" = "Ažuriranje softvera";
+"PO-NOFI-OS-DESCRIPTION" = "MacOS Big Sur VERSIONTAG sada može biti instaliran na vaš uređaj. Otvorite Patched Sur i kliknite Update MacOS da saznate više.";
+
+// MARK: About Patched Sur
+
+// APPBUILD is the app's version build number, like "96".
+"PO-ATP-AUTHOR-BUILD" = "Od: Ben Sova • Verzija APPBUILD";
+"PO-ATP-DESCRIPTION" = "Jednostavni patcher, sa velikim jezgrom, da učini pokretanje Big Sur sistema na nepodržanim Mac uređajima jednostavno, dizajnirano za svakoga.";
+"PO-ATP-WHATS-NEW-QUESTION" = "Šta je novo u v0.3.0?";
+"PO-ATP-WHATS-NEW-ANSWER" = "Biti će brz, moćan i lagan za svakoga, čak i ako ste ne-Metal korisnik ili ne pričate Engleski.";
+
+// MARK: Central View
+
+"PO-UP-TITLE" = "Pokreni ažuriranje";
+"PO-UP-DESCRIPTION" = "Ažurirajte ili MacOS ili patcher na noviju verziju da ostanete ažurni.";
+"PO-PK-TITLE" = "Izmijenite Kext fajlove";
+"PO-PK-DESCRIPTION" = "Kext fajlovi daju MacOS-u njegovu punu funkcionalnost, tako da sve radi kako treba.";
+"PO-ST-TITLE" = "Postavke";
+"PO-ST-DESCRIPTION" = "Ugasite animacije, upalite mijenjanje grafičke, prikaži log fajlove i više.";
+"PO-CI-TITLE" = "Kreiraj instalaciju";
+"PO-CI-DESCRIPTION" = "Napravi MacOS Big Sur instalacijski USB uređaj koji može (re) instalirati MacOS i više.";
+"PO-IR-TITLE" = "Instaliraj mod za oporavak";
+"PO-IR-DESCRIPTION" = "Patchuj trenutni uređaj za oporavak (korišten sa CMD-R prilikom paljenja). Nije uvijek korisno.";
+"PO-AMM-DESCRIPTION" = "Prikaži informacije o vašem Mac uređaju bez serijskog broja. Dobro za prikazivanje vašeg uspjeha.";
+
+"PO-PK-NO-NEED-TITLE" = "Izmjenjivanje kext fajlova neobavezno";
+"PO-PK-NO-NEED-DESCRIPTION" = "Nemorate izmjenjivati kext fajlove na Late 2013 iMac uređajima. Big Sur već radi punim potencijalom.";
+
+// MARK: Settings View
+
+"PO-ST-TITLE-ALT" = "Dodatna podešavanja";
+"PO-ST-SUBTITLE" = "Neki korisni alati";
+"PO-ST-SECTION-1" = "Dodatni patchevi";
+"PO-ST-SECTION-2" = "Dodatni alati";
+"PO-ST-RESTART-APPLY" = "Kada restartujete Mac uređaj, promjene će biti primijenjene.";
+
+"PO-ST-DA-DISABLE" = "Isključi animacije";
+"ENABLE" = "Uključi";
+"PO-ST-DA-DISABLE-DONE" = "Animacije isključene!";
+"PO-ST-DA-DISABLE-DONE-2" = "Kada restartujete Mac, promjene će biti primijenjene, i Big Sur bi trebao raditi malo bolje.";
+"PO-ST-DA-ENABLE-DONE" = "Animacije uključene!";
+"PO-ST-DA-DESCRIPTION" = "Isključivanje animacija može pomoći Mac uređajima bez Metal tehnologije. Zato što nemaju grafičku akceleraciju, Big Sur radi ekstremno sporo, tako da bi islljučivanje animacija trebalo malo pomoći.";
+
+"PO-ST-GXS-ENABLE" = "Uključi prebacivanje grafike";
+"DISABLE" = "Isključi";
+"PO-ST-GXS-DESCRIPTION" = "Ako imate Mac sa više grafičkih kartica (GPU-a), onda vjerovatno želite automatsko prebacivanje grafike. Hvala @15wat za otkrivanje ovog rješenja.";
+"PO-ST-GXS-ENABLE-DONE" = "Prebacivanje grafike uključeno";
+"PO-ST-GXS-ENABLE-DONE-2" = "Sada će se grafika prebacivati automatski! Možda ćete morati restartovati uređaj da se promjene pokrenu.";
+"PO-ST-GXS-ENABLE-FAILED" = "Neuspješno uključivanje prebacivanja grafike";
+"PO-ST-GXS-DISABLE-DONE" = "Isključeno prebacivanje grafike";
+"PO-ST-GXS-DISABLE-DONE-2" = "Sada se grafika više neće prebacivati automatski! Možda ćete morati restartovati uređaj da se promjene pokrenu.";
+"PO-ST-GXS-ENABLE-FAILED" = "Neuspješno isključivanje prebacivanja grafike";
+
+"PO-ST-PKL-BUTTON" = "Prikaži log fajlove kext izmijena";
+"PO-ST-PKL-DESCRIPTION" = "Ako vam patcher kext fajlova ne radi, možda će vrijediti da pogledate log fajlove i potražite greške. Ovo bi također moglo pomoći nekome ko vama pokušava pomoći da riješite problem, tako da, ako možete, pokažite ovo bilo kome ko vam želi pomoći.";
+"PO-ST-PKL-TITLE" = "Logovi kext patchera";
+"PO-ST-PKL-NO-LOGS" = "Nema zabilježenih logova";
+"PO-ST-PKL-COPIED" = "Kopirano!";
+"PO-ST-PKL-COPIED-2" = "Zadnji logovi kext patchera kopirani su. Ovo bi vam moglo pomoći sa debagovanjem, i pobrinite se da podijelite ovo sa bilo kim ko vam pokušava pomoći sa problemom.";
+
+"PO-ST-CL-TITLE" = "Počistite ostatke Patched Sur-a";
+"PO-ST-CL-DESCRIPTION" = "Ponekad, Patched Sur ostavi male ostatke kada je nešto pokrenuto. Ovo bi sa vremena na vrijeme moglo osloboditi do 12 GB prostora, ovo je preporučljivo najviše nakon ažuriranja.";
+"PO-ST-CL-DONE" = "Ostaci počišćeni";
+"PO-ST-CL-DONE-2" = "Fajlovi su obrisani, trebali bi ste vidjeti više praznog prostora (pod pretpostavkom da je bilo većih fajlova za izbrisati).";
+
+"PO-ST-CYE-TITLE" = "Doprinesite vašim utiscima!";
+// Add a translation for 'Please Note: These reports are only accepted in English.' to this next value
+"PO-ST-CYE-DESCRIPTION" = "Patched Sur aplikacija prije instalacije Big Sur sistema ima mogućnost reći ljudima kako će se njihov Mac ponašati sa Big Sur sistemom. Ipak, ova mogućnost treba informacije od drugih ljudi, i tu vi možete pomoći! Samo kliknite na link iznad i pratite instrukcije da bi pomogli. PAŽNJA: Informacije se primaju samo na Engleskom jeziku!";
+
+"PO-ST-RL-TITLE" = "Ponovo pokreni Patcher";
+"PO-ST-RL-DESCRIPTION" = "Ne znam zašto bi ovo ikad radili, ali ako želite, možete ponovo pokrenuti aplikaciju Patcher. Ovo će osvježiti informacije koje se dobijaju kada se Patcher prvi put pokrene, i tako dalje. Zanimljiva činjenica: Ovo je isti kod koji se pokreće kada ažuriranje završi.";
+"PO-ST-RL-FAILED" = "Ponovno pokretanje neuspješno!";
+"PO-ST-RL-FAILED-2" = "Nismo uspjeli pokrenuti Patched Sur, ali to možete vi sami.";
+
+// MARK: Patch Kexts Page
+
+"PO-PK-TITLE-ALT" = "Od-izmijenite kext fajlove";
+"PO-PK-SUBTITLE" = "Učini da driveri rade bazično";
+"PO-PK-DESCRIPTION-2" = "Izmjenjivanje kext fajlova omogućava da vam WiFi, USB, i još drugih stvari radi na Big Sur sistemu. Bez ovih kext fajlova, Mac neće raditi punim potencijalom na Big Sur sistemu i nekoliko stvari neće raditi. Ako morate, možete od-patchovati pa opet patchovati fajlove što bi moglo riješiti potencijalne probleme. Ponekad, bilo bi dobro sačekati prije izmjenjivanja kext fajlova, jer bi neke stvari mogle otežati rad sistemu.";
+"PO-PK-START" = "Započni izmjenjivanje kext fajlova";
+"PO-PK-UN-START" = "Započni od-izmjenjivanje kext fajlova";
+"PO-PK-INSTEAD" = "Umjesto toga od-izmijenite kext fajlove";
+"PO-PK-INSTEAD-REVERSE" = "Umjesto toga izmijenite kext fajlove";
+"PO-PK-DETECT" = "Detektovanje patcheva";
+"PO-PK-NONE-DETECTED" = "Nisu detektovani patchovani resursi!";
+"PO-PK-NONE-HELP" = "Pokušajte uključiti patchovani instalacijski USB";
+"PO-PK-RUNNING" = "Izmjenjivanje kext fajlova";
+"PO-PK-UN-RUNNING" = "Od-izmjenjivanje kext fajlova";
+"PO-PK-LEGACY-ALERT" = "Jedini detektovani patchovi zahtijevaju Legacy Mod";
+
+// MARK: Create Installer Others
+
+"PO-CI-START-TITLE" = "Kreiraj macOS instalaciju";
+"PO-CI-START-DESCRIPTION" = "Ovaj alat vam dozvoljava da napravite Patched Sur patchovani macOS Big Sur instalacijski USB, slično kao što to radi aplikacija prije instalacije Big Sur sistema, sa nekoliko promjena. Ovo može biti korišteno u slučaju da kasnije naletite na problem sa Patcherom. Zapamtite da možete instalirati particiju za oporavak koja je prilično slična ovome, ipak trenutno ne može reinstalirati macOS zato što nema WiFi signala u recovery modu, a ovo može. Također zapamtite da ako koristite ovo za ažuriranje, postoji lakši način, a to je aplikacija poslije instalacije Big Sur sistema.";
+"PO-CI-FINISHED-TITLE" = "Završeno kreiranje MacOS instalacije";
+"PO-CI-FINSIHED-DESCRIPTION" = "Ovaj instaler sada može biti korišten za šta god ga želite koristiti. Potpuno je patchovan kao što bi bio da ste to uradili sa aplikacijom prije instalacije. Sadržava macOS instalaciju (nadam se da ste to znali), puno okruženje za oporavak i naravno Patched Sur za izmjenjivanje kext fajlova.";
+
+// MARK: About This Mac
+
+"PO-AMM-MODEL" = "Model";
+"PO-AMM-PROCESSOR" = "Procesor";
+"PO-AMM-GRAPHICS" = "Grafika";
+"PO-AMM-MEMORY" = "Memorija";
+"PO-AMM-BACK" = "Nazad na početak";
+"PO-AMM-UPDATE" = "Ažuriranje softvera";
+"PO-AMM-VERSION" = "Verzija";
+
+// MARK: Update Status
+
+"PO-UP-CHECKING" = "Provjeravanja ažuriranja";
+"PO-UP-CHECK-FAILED" = "Neuspješna provjera ažuriranja";
+"PO-UP-CHECK-FAILED-1" = "Ovo vjerovatno znači da je vaša WiFi konekcija loša, ili su GitHubovi serveri ugašeni. Ovo ne bi trebalo predstavljati problem, s obzirom da možete ažurirati MacOS ručno pomoću aplikacije prije instalacije Big Sur sistema, ili ažurirajte Patcher aplikaciju skidanjem sa Patched Sur GitHub stranice.";
+"PO-UP-TITLE-PATCHER" = "Ažurirajte Patcher";
+"PO-UP-TITLE-MACOS" = "Ažurirajte macOS";
+
+"PO-UP-USING-TRACK" = "Vi koristite";
+// Imagine that this is like a sentence. First you see the above phrase, then Release or Beta, then the next text.
+// So this would read, "You are using the Release update track"
+"PO-UP-USING-TRACK-2" = "verziju ažuriranja.";
+"PO-UP-BETA-DESCRIPTION" = "Ova ažuriranja mogu biti nestabilna i nisu preporučljiva za svakodnevnu upotrebu.";
+"PO-UP-RELEASE-DESCRIPTION" = "Ova ažuriranja su obično stabilna i ovo je uobičajena verzija ažuriranja.";
+"PO-UP-IS-AVALIBLE" = "Ažuriranje je dostupno!";
+"RELEASED" = "Izbačeno";
+"BUILD" = "Build";
+"PO-UP-VIEW-OTHER" = "Pogledaj druge verzije";
+"PO-UP-START-TITLE" = "Započni MacOS ažuriranje";
+"PO-UP-START-DESCRIPTION" = "Da ažurira, patcher će prvo skinuti najnovije patchove i onda će skinuti najnoviju MacOS verziju sa Apple-ovog sajta. Nakon toga će se pokrenuti Apple-ov update bez provjere kompatibilnosti.";
+"PO-UP-NOTES-TITLE" = "Pogledaj najnovije zabilješke ažuriranja";
+"PO-UP-NOTES-DESCRIPTION" = "Pogledaj šta je novo u MacOS-u prije ažuriranja. Hvala Mr. Macintosh-u (ili Apple-u/9to5Mac-u ponekad) za ovo.";
+"PO-UP-NO-UPDATES" = "Nema novih dostupnih ažuriranja.";
+"PO-UP-YOU-ON" = "Trenutno ste na XX.YY.ZZ.";
+"PO-UP-NOTIF-TITLE" = "Konfigurišite obavijesti za ažuriranja";
+"PO-UP-NOTIF-DESCRIPTION" = "Dobijajte obavijesti za ažuriranja za MacOS i Patcher.";
+
+"PO-UP-NOTIF-TITLE-2" = "Obavijesti o ažuriranjima";
+// In case you don't know, /n means line down. So if I wrote Hello\nWorld, it would show up as:
+// Hello
+// World
+"PO-UP-NOTIF-DESCRIPTION-2" = "Zato što vaš Mac nije podržan, Software Update iz sistemskih podešavanja vas nikada neće obavijestiti o ažuriranju. Ipak, Patched Sur vam može ovo obezbijediti, kao i obavijesti o ažuriranjima Patchera ako želite. \n\nDobijajte obavijesti za:";
+"NO" = "Ne";
+"YES" = "Da";
+"CONFIRM" = "Potvrdi";
+"PO-NOTIF-SETUP-DONE" = "Postavi obavijesti!";
+"PO-NOTIF-SETUP-DONE-2" = "Patched Sur će vas obavještavati o ažuriranjima bazirano na vašim novim postavkama.";
+"PO-NOTIF-SETUP-PERMS" = "Patched Sur treba dozvolu za slanje obavijesti.";
+"PO-NOTIF-SETUP-PERMS-2" = "Prije nego što Patcher može slati obavijesti za ažuriranja, Patcher treba dozvolu za slanje notifikacija.";
+"PO-NOTIF-SETUP-ALMOST" = "Skoro gotovo!";
+"PO-NOTIF-SETUP-ALMOST-2" = "Da završite namještanje notifikacija, Patched Sur zahtijeva pravljenje daemon-a koji će povremeno provjeravati. Da ovo namjestite Patcher treba root pristup, tako da ćete biti pitani da unesete šifru, onda će biti gotovo!";
+"PO-NOTIF-SETUP-DENY" = "Patched Sur vam ne može slati obavijesti";
+"PO-NOTIF-SETUP-DENY-2" = "Sigurno ste odbili Patched Sur od slanja obavijesti. Ako želite da vam Patched Sur šalje notifikacije, otvorite Sistemske Postavke > Obavijesti > Patched Sur i onda dozvolite obavijesti.";
+"PO-NOTIF-SETUP-FAILED" = "Neuspješno konfigurisanje Daemon-a";
+
+"PO-UP-COMPAT-FAIL-SIP" = "Neuspješna provjera SIP statusa";
+"PO-UP-COMPAT-FAIL-SIP-2" = "Patched Sur nije uspio provjeriti vaš SIP status, što bi trebalo biti nemoguće.";
+"PO-UP-COMPAT-SIP-ON" = "SIP je uključen";
+"PO-UP-COMPAT-SIP-ON-2" = "Zato što instalacija provjerava da li ažuriranje podržava vaš Mac, Patched Sur mora ubaciti dylib u instalaciju da se ona ne bi brinula o kompatibilnosti. Ipak, ovo može biti urađeno samo ako je SIP ugašen. Da ugasite SIP uradite ovo:
+
+1. Uđite u mod za oporavak (⌘R prilikom paljenja)
+2. Otvorite Terminal pod 'Utilities'.
+3. Upišite: csrutil disable i kliknite Enter.
+4. Kliknite Enter i restartujte uređaj, onda ponovo pokrenite Patched Sur";
+"PO-UP-COMPAT-LV-ON" = "Validacija biblioteke je uključena";
+"PO-UP-COMPAT-LV-ON-2" = "Validacija biblioteke brani Patched Sur-u ubacivanje koda u instalaciju i zaobilaženje provjere kompatibilnosti. Ako želite ažurirati macOS, morate ugasiti validaciju biblioteke (Library Validation).";
+
+"SKIP" = "Preskoči";
+"PO-UP-APP-FAILED" = "Skidanje neuspješno";
+"PO-UP-APP-START" = "Skinite ažuriranje";
+"DOWNLOADING" = "Skidanje";
+
+// MARK: Update Chooser
+
+"PO-UP-CHOOSE-TITLE" = "Biranje ažuriranja";
+"PO-UP-CHOOSE-FAILED" = "Greška prilikom dohvaćanja dostupnih ažuriranja.";
+"PO-UP-CHOOSE-PRE" = "Ova verzija MacOS-a je već skinuta:";
+"PO-UP-CHOOSE-CAN" = "Možete skinuti ove verzije MacOS-a:";
+"PO-UP-CHOOSE-DELETE" = "Da li ste sigurni da želite izbrisati već skinutu instalaciju?";
+"PO-UP-CHOOSE-DELETE-2" = "Dok će vam ovo osloboditi dobrih 12.2 GB prostora, također je korisno za brzo reinstaliranje MacOS-a ili ili za nešto drugo zbog čega bi vam moglo trebati.";
+"DELETE" = "Izbriši";
+"UPDATE" = "Ažuriraj";
+"REINSTALL" = "Reinstaliraj";
+"UNEXPECTED-ERROR" = "Došlo je do neočekivane greške";
+"PO-UP-CHOOSE-EXACT-PATH" = "Izgleda da ovaj fajl nedostaje i cijeli patch ne može biti određen. Nećete moći koristiti već skinutu instalaciju za sada.";
+"PO-UP-CHOOSE-DOWNLOAD" = "Skinite MacOS instalaciju";
+"PO-UP-CHOOSE-DOWNLOAD-1" = "Možete se ažurirati na ovu verziju MacOs-a, ipak možete je također i skinuti i to ste dugme kliknuli. Ova obavijest se samo brine da to znate (Ovo će samo otvoriti vaš internet pretraživač i skinuti instalaciju, ništa posebno.)";
+"PO-UP-CHOOSE-DOWNLOAD-2" = "Ne možete se \"ažurirati\" na stariju verziju MacOS-a, ali možete skinuti instalaciju ako imate nešto što želite raditi sa njom (Ovo će samo otvoriti vaš internet pretraživač i skinuti instalaciju, ništa posebno.)";
+"PO-UP-CHOOSE-DOWNLOAD-TIP" = "Možete također skinuti InstallAssistant.pkg ako želite";
+"PO-UP-CHOOSE-DOWNLOAD-TIP-2" = "Ne možete se ažurirati na stariju MacOS verziju, ali možete skinuti ovu instalaciju ako želite.";
+"DOWNLOAD" = "Skini";
+
+// MARK: Download Patches/macOS
+
+"DOWNLOAD-PATCH-MACOS" = "Skidanje Patcheva i MacOS-a";
+"DOWNLOADED-PATCHES" = "Patchevi skinuti";
+"PO-UP-DPM-DESCRIPTION" = "Patchevi vam dozvoljavaju da koristite hardver kao što je WiFi i dozvoljava Patcheru da prođe preko instalacijskog koda tako da vam Mac ostane na punoj funkcionalnosti. MacOS se skida izravno sa Apple-a, u formi InstallAssistant.pkg fajla. Sa ovime, možemo otvoriti instalacijsku aplikaciju i započeti instalaciju. (Ponekad se linija za progres zaustavi, ali se fajl skida!)";
+"DOWNLOADING-MACOS" = "Skidanje MacOS-a";
+
+// MARK: Starting OS Installer
+
+"PO-UP-SOI-TITLE" = "Spremno za ažuriranje";
+"PO-UP-SOI-DESCRIPTION" = "Sada, Patched Sur će završiti pripreme za ažuriranje i restartovat će se u MacOS Updater. Nakon nekog vremena, MacOS će završiti sa instalacijom i moći ćete izmijeniti kext fajlove i uživati u MacOS-u. Ovo će trajati dugo! Kao i pripremanje za ažuriranje iz sistemskih podešavanja, ovo nije najbrža stvar na svijetu.";
+"PO-UP-SOI-PREPARING" = "Pripremanje za ažuriranje";
+
+// MARK: Recovery Patch
+
+"PO-IR-SUBTITLE" = "Otprilike korisno";
+"DISCLAMIER" = "OBAVIJEST";
+"PO-IR-DISCLAIM" = "Na ovo se NE TREBATE 100% oslanjati. Ovo je većinom \"evo, ovo je najbolje što možete dobiti za sada.\" Pokušao sam da napravim mod za oporavak iz snova, ali to nije radilo većinom zato što Mac ignoriše fajlove koji postoje bez razloga. Kad ti fajlovi ne bi bili ignorisani, ne bih morao praviti ovu poruku. Ipak, možete uraditi ovo sa obnovom: mijenjati NVRAM vrijednosti (kao što je SIP status i boot-args), koristiti Disk Utility, koristiti internet (valjda?), i od-izmijeniti/izmijeniti kext fajlove (i možda još neke stvari). Moj savjet je da napravite instalacijski USB i držite ga se. Sa ovime ne možete reinstalirati macOS!";
+"PO-IR-SIP-ON" = "SIP je Uključen";
+"PO-IR-SIP-ON-DESCRIPTION" = "Patch za oporavak ne može biti instaliran kada je SIP uključen zbog zaštite fajl sistema. Sada se možda čini da je jedini način za gašenje SIP-a preko moda za oporavak ali postoje drugi načini \n\nAko još uvijek imate instalacijski USB, možda ćete moći ući u EFI Boot na njemu. Ako to ne radi, ili to ne možete uraditi, uđite u Internetski mod za oporavak (CMD-OPTION-R prilikom paljenja) i možete to uraditi od tamo.";
+"PO-IR-PATCHING" = "Patchovanje oporavka";
+"PO-IR-PATCHING-DESCRIPTION" = "MacOS Mod za Oporavak se sada patchuje na vaš Mac. Ovaj proces ima 2 koraka, prvi je da skinete neophodne fajlove a drugi je da ih instalirate. Ovo je super jednostavno, i ne treba puno vremena. Kada ovo bude gotovo, MacOS Mod za Oporavak će biti otključan. Zapamtite da ako imate više particija, Mod za Oporavak vašeg startup diska će biti pokrenut (najvjerovatnije) umjesto drugih instaliranih Modova za Oporavak.";
+"PO-IR-DOWNLOAD-RECOVERY" = "Skidanje Moda za Oporavak";
+"PO-IR-DONE" = "Završeno Patchovanje Oporavka!";
+"GO-HOME" = "Vrati se na početnu stranicu";

@@ -1,12 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "icon_32x32@2x.png",
+      "filename" : "PMBasic.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "icon_128x128.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

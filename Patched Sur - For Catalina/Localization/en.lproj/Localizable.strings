@@ -433,7 +433,7 @@ You cannot reinstall macOS with this.";
 "PO-IR-DONE" = "Done Patching Recovery!";
 "GO-HOME" = "Go Home";
 
-// MARK: Three v0.3.0 (102)
+// MARK: Three v1.0.0 (102)
 
 // Friends in Settings
 "PO-ST-FRIENDS" = "Friends of Patched Sur";
@@ -447,6 +447,8 @@ Make sure not to enable patches you don't need.";
 // This will come right before a button that toggles between "Patch Kexts" and "Unpatch Kexts"
 "PO-PK-CONFIG-MODE" = "Mode:";
 "PO-PK-CONFIG-UNPATCH" = "All kext patches will be uninstalled and the system will be restored to it's old unpatched state. WiFi won't work and possibly other things, this cannot be configured. This could break the system kernel collection resulting in either a kernel panicking Mac or the inability to repatch the kexts, so it's generally safer to just reinstall macOS instead of unpatching.";
+"ENABLED" = "Enabled";
+"DISABLED" = "Disabled";
 
 // MARK: Acceleration & Boot.plist Settings
 
@@ -456,5 +458,13 @@ Make sure not to enable patches you don't need.";
 "PO-ST-ACCEL-DISALLOW" = "Disallow Graphics Acceleration Patching";
 
 "PO-ST-BOOT" = "Patch Boot.plist";
-"PO-ST-BOOT-DONE" = "Patched Boot.plist";
-"PO-ST-BOOT-DESCRIPTION" = "Patching the com.apple.Boot.plist allows you to do NVRAM resets on your Mac without needing the USB installer and EFI Boot. Note an NVRAM reset, Patched Sur will bug you asking for you to boot into recovery mode or an EFI Boot to put this value back in place. This won't be super annoying (once every three hours), but it's better for you to have that value then to not have it. (The terminal command to set it is nvram boot-args=-no_compat_check note you'll have to do that in recovery mode.)";
+"PO-ST-BOOT-DONE" = "Already Patched Boot.plist";
+"PO-ST-BOOT-DESCRIPTION" = "Patching the com.apple.Boot.plist allows you to do NVRAM resets on your Mac without needing the USB installer and EFI Boot. Afterwards, you'll have to restore the NVRAM (Patched Sur will help) since it's better for you to have that value then to not have it. You will have to repatch this plist every time you update macOS.";
+"PO-ST-BOOT-ONGOING" = "Patching Boot.plist";
+"PO-ST-BOOT-NONE" = "No compatible patches detected.
+You may not have the latest version of the patches downloaded, which are required to patch the boot.plist.
+Use 'Update Backup Patches' to update the patches, then try this again.";
+
+// MARK: Volume Selection
+
+"PRE-VOL-INCOMPAT" = "See Incompatible Drives";
