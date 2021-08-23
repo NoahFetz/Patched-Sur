@@ -189,6 +189,9 @@
 		7609BD17257FF8DB0054B76F /* DownloadKexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadKexts.swift; sourceTree = "<group>"; };
 		7609BD1D258008B70054B76F /* StartInstallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartInstallView.swift; sourceTree = "<group>"; };
 		760AA9CE261E72A200ADABE0 /* UpdateOSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateOSView.swift; sourceTree = "<group>"; };
+		760B207426C48437000D773C /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		760B207526C48438000D773C /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		760B207726C48438000D773C /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		760C7D1A25719C27004817F1 /* UpdateAppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAppAction.swift; sourceTree = "<group>"; };
 		762385E625E9DEE70088A8D9 /* PatchedSurDaemon.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PatchedSurDaemon.plist; sourceTree = "<group>"; };
 		7624934C2635EA6900805E4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -211,12 +214,9 @@
 		7643F616256F2A4700A9D61E /* NameComponent.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NameComponent.plist; sourceTree = "<group>"; };
 		7646DF8E263CE4740097B136 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		7646DF8F263CE4740097B136 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		7646DF90263CE4800097B136 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
-		7646DF92263CE5DE0097B136 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		7646DF97263CF0EB0097B136 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Main.strings; sourceTree = "<group>"; };
 		7646DF99263CF0EB0097B136 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		764D732D2640F81000719132 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		764EB40B25C61D190033184B /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = banner.png; path = ../../../Downloads/banner.png; sourceTree = "<group>"; };
 		764F516725FC960D004F49C6 /* VerifyActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyActions.swift; sourceTree = "<group>"; };
 		765DA449264E26F3003A97B5 /* PSKexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSKexts.swift; sourceTree = "<group>"; };
 		7660A2EF269516E100653771 /* NVRAMResetHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVRAMResetHelp.swift; sourceTree = "<group>"; };
@@ -257,7 +257,7 @@
 		7692E089251BFFB400C5FB9A /* Patched_Sur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Patched_Sur.entitlements; sourceTree = "<group>"; };
 		7692E08F251C077400C5FB9A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		769532432605A144007A1BB4 /* VolumeSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSelectorView.swift; sourceTree = "<group>"; };
-		769932E2263F2DE8006088E9 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
+		769D03BD26D16C6C008ADB2C /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
 		769F37F22601A4DC007A1246 /* DownloadActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadActions.swift; sourceTree = "<group>"; };
 		769F37F42601AF06007A1246 /* macOSDownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOSDownloadView.swift; sourceTree = "<group>"; };
 		76A070B6261AD06E0002A304 /* CreateInstallerMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateInstallerMain.swift; sourceTree = "<group>"; };
@@ -265,7 +265,6 @@
 		76A1D33A259933880032F7D9 /* CompatInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatInfo.swift; sourceTree = "<group>"; };
 		76A626D32524ED78002C57EA /* MacCompatibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCompatibility.swift; sourceTree = "<group>"; };
 		76AA16672655D4D300FC56FC /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		76AA16682655D6DF00FC56FC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		76B463C826BC8EB800F129D8 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		76B5981F262CEE0E004E52BC /* RecoveryPatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPatchView.swift; sourceTree = "<group>"; };
 		76B7C334253A8EDA001C7991 /* ReleaseTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseTrackView.swift; sourceTree = "<group>"; };
@@ -518,7 +517,6 @@
 			isa = PBXGroup;
 			children = (
 				762385E625E9DEE70088A8D9 /* PatchedSurDaemon.plist */,
-				764EB40B25C61D190033184B /* banner.png */,
 				7643F616256F2A4700A9D61E /* NameComponent.plist */,
 			);
 			path = "Extra Files";
@@ -628,13 +626,13 @@
 				"pt-BR",
 				"pt-PT",
 				"zh-Hans",
-				"zh-Hant",
 				da,
 				hr,
 				de,
 				el,
 				fr,
 				bs,
+				nl,
 			);
 			mainGroup = 7692E059251BFF9300C5FB9A;
 			packageReferences = (
@@ -807,13 +805,12 @@
 				76633BF1263E257F000A949E /* uk */,
 				76633BF2263E25A4000A949E /* pt-PT */,
 				76633BF9263EF96C000A949E /* de */,
-				769932E2263F2DE8006088E9 /* el */,
 				764D732D2640F81000719132 /* pt-BR */,
 				76EBA22726449AA200F50A8C /* es */,
 				76AA16672655D4D300FC56FC /* hr */,
-				76AA16682655D6DF00FC56FC /* zh-Hans */,
 				52B32BC1267BB8DC00C78CAE /* bs */,
 				76B463C826BC8EB800F129D8 /* fr */,
+				769D03BD26D16C6C008ADB2C /* el */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -829,13 +826,13 @@
 				76E6C737263B93630063C08E /* es */,
 				76E6C740263B99B10063C08E /* en */,
 				7646DF8E263CE4740097B136 /* zh-Hans */,
-				7646DF90263CE4800097B136 /* zh-Hant */,
 				7646DF97263CF0EB0097B136 /* da */,
 				76020744263DA74A00A8D18A /* hr */,
 				76020748263DBB3600A8D18A /* de */,
 				7602074C263DCDDF00A8D18A /* el */,
 				76633BF5263E3755000A949E /* fr */,
 				52B32BC0267BB8DC00C78CAE /* bs */,
+				760B207526C48438000D773C /* nl */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -845,6 +842,7 @@
 			children = (
 				7692E06F251BFF9400C5FB9A /* Base */,
 				52B32BBF267BB8DC00C78CAE /* bs */,
+				760B207426C48437000D773C /* nl */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -859,13 +857,13 @@
 				76E6C74D263CB0C90063C08E /* es */,
 				76E6C74E263CB0C90063C08E /* uk */,
 				7646DF8F263CE4740097B136 /* zh-Hans */,
-				7646DF92263CE5DE0097B136 /* zh-Hant */,
 				7646DF99263CF0EB0097B136 /* da */,
 				76020745263DA74A00A8D18A /* hr */,
 				76020749263DBB3600A8D18A /* de */,
 				7602074D263DCDE000A8D18A /* el */,
 				76633BF6263E3755000A949E /* fr */,
 				52B32BC2267BB8DC00C78CAE /* bs */,
+				760B207726C48438000D773C /* nl */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -882,7 +880,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 114;
+				CURRENT_PROJECT_VERSION = 115;
 				DEVELOPMENT_TEAM = 52RY4VB4F6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Patched Sur - Recovery/Info.plist";
@@ -891,7 +889,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0.0rc3;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "bensova.Patched-Sur-Recovery";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -907,7 +905,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 114;
+				CURRENT_PROJECT_VERSION = 115;
 				DEVELOPMENT_TEAM = 52RY4VB4F6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Patched Sur - Recovery/Info.plist";
@@ -916,7 +914,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0.0rc3;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "bensova.Patched-Sur-Recovery";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1050,7 +1048,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 114;
+				CURRENT_PROJECT_VERSION = 115;
 				DEVELOPMENT_ASSET_PATHS = "\"Patched Sur - For Catalina/Preview Content\"";
 				DEVELOPMENT_TEAM = 52RY4VB4F6;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1065,7 +1063,7 @@
 					"$(PROJECT_DIR)/Extra\\ Files",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15.2;
-				MARKETING_VERSION = 1.0.0rc3;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "u-bensova.Patched-Sur-Catalina";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1085,7 +1083,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 114;
+				CURRENT_PROJECT_VERSION = 115;
 				DEVELOPMENT_ASSET_PATHS = "\"Patched Sur - For Catalina/Preview Content\"";
 				DEVELOPMENT_TEAM = 52RY4VB4F6;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1100,7 +1098,7 @@
 					"$(PROJECT_DIR)/Extra\\ Files",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15.2;
-				MARKETING_VERSION = 1.0.0rc3;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "u-bensova.Patched-Sur-Catalina";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1119,7 +1117,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 114;
+				CURRENT_PROJECT_VERSION = 115;
 				DEVELOPMENT_ASSET_PATHS = "\"Patched Sur/Preview Content\"";
 				DEVELOPMENT_TEAM = 52RY4VB4F6;
 				DSTROOT = "/tmp/Post-Install.dst";
@@ -1135,7 +1133,7 @@
 					"$(PROJECT_DIR)/Extra\\ Files",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0.0rc3;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "u-bensova.Patched-Sur";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1153,7 +1151,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 114;
+				CURRENT_PROJECT_VERSION = 115;
 				DEVELOPMENT_ASSET_PATHS = "\"Patched Sur/Preview Content\"";
 				DEVELOPMENT_TEAM = 52RY4VB4F6;
 				DSTROOT = "/tmp/Post-Install.dst";
@@ -1169,7 +1167,7 @@
 					"$(PROJECT_DIR)/Extra\\ Files",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0.0rc3;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "u-bensova.Patched-Sur";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
